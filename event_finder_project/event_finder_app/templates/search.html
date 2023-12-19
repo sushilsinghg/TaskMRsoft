@@ -1,0 +1,6 @@
+<!-- event_finder_app/templates/event_finder_app/search.html -->
+<form method="post" action="{% url 'event_search' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Search Events</button>
+</form>
